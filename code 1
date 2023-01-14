@@ -1,0 +1,6 @@
+function getGMT0Time() {
+  var currentTime = new Date();
+  var gmt0Time = new Date(currentTime.getTime() + currentTime.getTimezoneOffset()*60*1000);
+  return gmt0Time;
+}
+console.log(getGMT0Time());
